@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CodeZilla</title>
+</head>
+<style>
+    *{
+    margin:0;
+    padding:0;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.logo img{
+    width: 100%;
+    margin-right: 50px;
+    border:50px cyan;
+    border-radius: 50px;
+}
+.navbar{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    position: sticky;
+    top:0;
+    cursor: pointer;
+}
+.nav-list{
+    width:50%;   
+    display:flex;
+}
+.nav-list li{
+    width: 70%;
+    list-style: none;
+}
+.nav-list li a{
+text-decoration: none;
+font-size:20px;
+font-weight:600;
+color:rgb(237, 238, 225);
+font-size: 20px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.nav-list li a:hover{
+    width:50%;
+display: inline;
+text-decoration: none;
+color:rgb(198, 21, 221)
+
+}
+.rightNav{
+    padding:0px 19px;
+    width: 30%;
+    text-align:right;
+
+}
+#search{
+    font-size:10px;
+    padding: 5px 12px;
+    border-radius: 55px;
+    border: 5px solid rgb(230, 118, 174);
+     
+}
+.background{
+    background:rgba(0, 0, 0, 0.322) ;
+    background-image: url('');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+} 
+.box-main{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color: rgb(0, 0, 0);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: auto;
+    max-width: 50%;
+    padding: 330px;
+}
+.firstSection{
+    background:rgba(46, 255, 255, 0.322);
+    background-image: url('https://images.pexels.com/photos/3338800/pexels-photo-3338800.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load');    background-size: cover;
+    height: 180vh;
+}
+.firstSection img{
+    align-items:center;
+    justify-content:center;
+    margin: -20px;
+}
+.firstHalf{
+    width: 70%;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+}
+.secondHalf{
+    flex-direction:column;
+    width: 50%;
+    justify-content:center;
+}
+.secondHalf img{
+    width: 50;
+    border:solid rgb(217, 241, 0);
+    border-radius:55px; 
+    margin:auto;
+    display: block;
+}
+.text-big{
+    font-size:50px;
+}
+.text-small{
+    font-size:20px;
+}
+.btn{
+    
+    padding: 5px 20px;
+    border:2px solid rgb(255, 255, 255);
+    border-radius:8px;
+    background: none;
+    cursor: pointer;
+    margin: 7px 2px;
+
+}
+
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+    color: white;
+}
+.btn-dark{
+    color: rgb(39, 39, 39);
+    border:2px solid grey;
+    vertical-align: center;
+    justify-content:center;
+}
+.section{
+    height:30%;
+    display:flex;
+    max-width: 70%;
+    justify-content:center;
+    align-items:center;
+    padding: 10px 20px;
+    margin: auto;
+    font-family: 'Ubuntu Mono', monospace;
+
+}
+.paras{
+    padding: 10px 12px;
+
+}
+.section-left{
+    height:30%;
+    display:flex;
+    max-width: 70%;
+    justify-content:center;
+    align-items:center;
+    padding: 10px 20px;
+    margin: auto;
+    flex-direction: row-reverse;
+    font-family: 'Ubuntu Mono', monospace;
+}
+.sactionSubTag{
+    font-family: 'Ubuntu Mono', monospace;
+    
+}
+.thumnail img{
+    width: 250px;
+    padding: 0px 0px;
+    margin: 19px;
+    border:2px solid black;
+    border-radius:55px;
+}
+.contact{
+    background-color: #e3e3e3;
+    height:735px;
+    text-align:center;
+    
+}
+.text-center{
+    text-align:center;
+    font-family: 'Ubuntu Mono', monospace;
+    padding: 10px 20px;
+}
+.form{
+    max-width: 500px;
+    margin: 42px auto;
+    font-size:23px;
+}
+.form-input{
+    width:88%;
+    margin: 30px 0;
+    font-size: 14px;
+    border:2px sole gray;
+    border-radius:52px;
+    padding:10px 30px;
+    font-family:monospace;
+
+}
+.text-footer{
+    text-align:center;
+    font-family: 'Ubuntu Mono', monospace;
+    padding: 10px 20px;
+    align-items: center;
+    color:wheat;
+    justify-content: center;
+}
+@media only screen and (max-width:1140px
+)
+{
+  .nav-list{
+      flex-direction: column; 
+  }
+  .navbar{
+      flex-direction: column;
+  }
+}
+</style>
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo"><img src="https://images.pexels.com/photos/38275/anonymous-studio-figure-photography-facial-mask-38275.jpeg?auto=compress&cs=tinysrgb&w=400" alt="logo"></div>
+            <li> <a href="#home">home</a> </li>
+            <li> <a href="#about">About</a></li>
+            <li> <a href="#services">service</a></li>
+        </ul>
+        <div class="rightNav">
+            <input type="text"name="search" id="search">
+            <button class="btn btn-sm">search</button>
+        </div>
+    </nav>
+    <section class="background firstSection"> 
+        <div class="box-main">
+        <div class="firstHalf">
+            <p class="text-big">Hey there</p>
+        <p class="text-small">
+            this is my first web site
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel possimus quae, est a numquam reiciendis provident molestiae, dolorem nemo earum consequuntur sunt inventore quidem harum atque facilis, qui dolor eos!
+        </p>
+        <div class="buttones">
+            <button class="btn">go to music</button>
+            <button class="btn">go to home</button>
+        </div>
+    </div>
+        <div class="secondHalf">
+            <img src="https://images.pexels.com/photos/685674/pexels-photo-685674.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="the image of music">
+        </div>
+    </div>
+     </section>
+     <section class="section">
+         <div class="peras">
+             <p class="section text-big">Hacking</p>
+         <p class="sectionTag text-small">A computer hacker is a computer expert who uses their technical knowledge to achieve a goal or overcome an obstacle, within a computerized system by non-standard means. Though the term hacker has become associated in popular culture with a security hacker – someone who utilizes their technical know-how of bugs or exploits to break into computer systems and access data which would otherwise be unavailable to them – hacking can also be utilized by legitimate figures in legal situations. For example, law enforcement agencies sometimes use hacking techniques in order to collect evidence on criminals and other malicious actors. This could include using anonymity tools (such as a VPN, or the dark web) to mask their identities online, posing as criminals themselves. Likewise, covert world agencies can employ hacking techniques in the legal conduct of their work. Oppositely, hacking and cyber-attacks are used extra- and illegally by law enforcement and security agencies (conducting warrantless activities), and employed by State actors as a weapon of both legal and illegal warfare.</p>
+        </div>
+         <div class="thumnail">
+             <img src="https://source.unsplash.com/400x400/?Hack,Hacking"the img" class="imgFluid">
+         </div>
+     </section>
+     <section class="section-left">
+        <div class="peras">
+            <p class="section text-big">Web design</p>
+        <p class="sectionTag text-small">Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; user interface design (UI design); authoring, including standardised code and proprietary software; user experience design (UX design); and search engine optimization. Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all. The term "web design" is normally used to describe the design process relating to the front-end (client side) design of a website including writing markup. Web design partially overlaps web engineering in the broader scope of web development. Web designers are expected to have an awareness of usability and if their role involves creating markup then they are also expected to be up to date with web accessibility guidelines.</p>
+        </div>
+        <div class="thumnail">
+            <img src="https://source.unsplash.com/400x400/?web page" alt="the img" class="imgFluid">
+        </div>
+    </section>  
+    <section class="section">
+        <div class="peras">
+            <p class="section text-big">coding</p>
+        <p class="sectionTag text-small">Computer programming is the process of designing and building an executable computer program to accomplish a specific computing result or to perform a specific task. Programming involves tasks such as: analysis, generating algorithms, profiling algorithms' accuracy and resource consumption, and the implementation of algorithms in a chosen programming language (commonly referred to as coding). The source code of a program is written in one or more languages that are intelligible to programmers, rather than machine code, which is directly executed by the central processing unit. The purpose of programming is to find a sequence of instructions that will automate the performance of a task (which can be as complex as an operating system) on a computer, often for solving a given problem. Proficient programming thus often requires expertise in several different subjects, including knowledge of the application domain, specialized algorithms, and formal logic.</p>
+       </div>
+        <div class="thumnail">
+            <img src="https://source.unsplash.com/400x400/?coding" alt="the img" class="imgFluid">
+        </div>
+    </section>
+    <hr>
+    <section class="contact">
+ <h2 class="text-center">contact Us</h2>
+ <div class="form">
+ <input class="form-input" type="text" name="name" id="name"placeholder="enter your name">
+ <input class="form-input" type="text" name="phone" id="phone"placeholder="enter your phone number">
+ <input class="form-input" type="email" name="email" id="email"placeholder="enter your email">
+ <textarea class="form-input" name="text" id="text" cols="30" rows="10" class="text" placeholder="your feedback"></textarea>
+ <button class="btn btn-dark">submit
+ </button>
+</div>
+</section>
+<footer class=background>
+    <p class="text-footer">
+    Copyright &copy; 2027-www.CodeZilla.com- All rights reserved
+</p>
+</footer>
+</body>
+</html>
